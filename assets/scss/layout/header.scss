@@ -1,0 +1,15 @@
+#header {
+  padding: 0 24px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  background: $color-primary;
+  color: white;
+  flex-shrink: 0;
+  .header-logo {
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+}

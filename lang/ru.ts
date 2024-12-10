@@ -1,0 +1,28 @@
+export default {
+  // buy: 'Купить',
+  // by_press_agree:
+  //   'Нажимая кнопку, вы соглашаетесь с условиями <a target="_blank" class="muted-link" href="https://arenatickets.kz/page/offer">публичной оферты</a>',
+  // checkout: 'Оформление заказа',
+  // choose_tickets_in_sector: 'Выберите кол-во билетов в секторе',
+  // details: 'Детали',
+  // email_format_is_wrong: 'Неверный формат email',
+  // entrance: 'Входной',
+  // field_is_required: 'Поле обязательно для заполнения',
+  // field_is_too_short: 'Поле слишком короткое',
+  // fill_data: 'Заполните данные',
+  // left: 'Осталось',
+  // no_tickets: 'Билетов нет',
+  // passed: 'Истек',
+  // price: 'Цена',
+  // promocode: 'Промокод',
+  // promocode_found: 'Промокод найден',
+  // refundable_fee: 'Комиссия за возвратный билет',
+  // row: 'Ряд',
+  // seat: 'Место',
+  // sector: 'Сектор',
+  // service_fee: 'Сервисный сбор',
+  // tickets_of: 'Билетов',
+  // to_payment: 'Перейти к оплате',
+  // total: 'Итого',
+  // your_order: 'Ваш заказ'
+} as any
