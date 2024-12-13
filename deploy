@@ -1,9 +1,17 @@
-yarn lintfix && git add . && git commit --allow-empty -m "$1" && git push && ssh arenatickets << EOF
-  sudo -i
-  cd /var/www/arenatickets_widget;
-  git pull;
-  yarn;
-  yarn lintfix;
-  yarn build;
-  pm2 reload ArenaticketsWidget;
-EOF
+#!/bin/bash
+
+# Проверка наличия сообщения коммита
+if [ -z "$1" ]; then
+  echo "Ошибка: Укажите сообщение для коммита!"
+  exit 1
+fi
+
+# Локальные команды
+yarn lintfix
+git add .
+git commit --allow-empty -m "$1"
+git push
+
+# Удаленные команды
+ssh arenatickets "sudo -i && cd /var/www/arenatickets_widget && git pull && yarn && yarn lintfix && yarn build && pm2 reload ArenaticketsWidget"
+
