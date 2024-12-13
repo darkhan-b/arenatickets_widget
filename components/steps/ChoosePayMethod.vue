@@ -44,6 +44,7 @@ const props = defineProps({
 const availablePayMethods = [
   // { id: 'kaspi', icon: 'kaspi.svg' },
   { id: 'card', icon: 'card.png', title: translate('card_payment') },
+  // { id: 'forum', icon: 'forum.png', title: translate('forum') },
   {
     id: 'cash',
     icon: 'cashregister.svg',

@@ -2,7 +2,16 @@
   <div class="timetable-wrap">
     <template v-if="timetableAvailableForSale">
       <StepsSelectTicketsSections v-if="timetable.type === 'sections'" />
-      <StepsSelectTicketsPricegroups v-if="timetable.type === 'pricegroups'" />
+      <StepsSelectTicketsPricegroups
+        v-if="
+          timetable.type === 'pricegroups' &&
+          timetable.show.ticket_design_id !== 9
+        " />
+      <StepsSelectTicketsForum
+        v-if="
+          timetable.type === 'pricegroups' &&
+          timetable.show.ticket_design_id === 9
+        " />
     </template>
     <template v-if="timetable.sale_starts_soon">
       <div class="alert alert-warning mx-5">{{ $t('sale_starts_soon') }}</div>
